@@ -1,3 +1,42 @@
-[gd_scene format=2]
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/screens/controls/screen_controls.gd" type="Script" id=1]
+[ext_resource path="res://src/screens/controls/binding_popup.gd" type="Script" id=2]
 
 [node name="screen_controls" type="Node"]
+script = ExtResource( 1 )
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="move_up_inputs" type="HBoxContainer" parent="UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move_down_inputs" type="HBoxContainer" parent="UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move_right_inputs" type="HBoxContainer" parent="UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="move_left_inputs" type="HBoxContainer" parent="UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="binding_popup" type="Popup" parent="UI"]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 2 )
