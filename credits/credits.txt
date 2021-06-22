@@ -1,0 +1,2 @@
+Olivier Boucard : https://www.braindead.bzh/entry/creating-a-game-with-godot-engine-introduction
+Kenney : https://www.kenney.nl/assets/racing-pack

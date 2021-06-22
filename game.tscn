@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://game.gd" type="Script" id=1]
+
+[node name="root" type="Node"]
+script = ExtResource( 1 )
+
+[node name="screen" type="Node2D" parent="."]
+
+[node name="UI" type="CanvasLayer" parent="."]
+
+[node name="version" type="Label" parent="UI"]
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = -50.0
+margin_top = -20.0
+margin_right = -10.0
+margin_bottom = -10.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="fps" type="Label" parent="UI"]
+anchor_left = 1.0
+anchor_right = 1.0
+margin_left = -60.0
+margin_top = 10.0
+margin_right = -10.0
+margin_bottom = 20.7424
+grow_horizontal = 0
+align = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
