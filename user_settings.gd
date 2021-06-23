@@ -43,8 +43,7 @@ func get_keybindings(action):
 	
 func replace_keybinding(action, input, scancode):
 	var previous = InputMap.get_action_list(action)
-	var event = InputEvent.new()
-	event.type = InputEvent.KEY
+	var event = InputEventKey.new()
 	event.scancode = scancode
 	previous[input] = event
 	_user_settings.set_value(KEY_BINDING_SECTION, action, previous)
@@ -114,14 +113,13 @@ func convert_key_to_string(scancode):
 		KEY_TAB      : "Tab",
 		KEY_BACKTAB  : "Backtab",
 		KEY_BACKSPACE: "Backspace",
-#		KEY_RETURN   : "Return",
 		KEY_ENTER    : "Enter",
 		KEY_INSERT   : "Insert",
 		KEY_DELETE   : "Delete",
 		KEY_SHIFT    : "Shift",
 		KEY_CONTROL  : "Ctrl",
 		KEY_META     : "Meta",
-		KEY_ALT      : "Alt"
+		KEY_ALT      : "Alt",
 	}
 	if keys.has(scancode):
 		return keys[scancode]
