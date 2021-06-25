@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://src/fonts/NormalFont.tres" type="DynamicFont" id=1]
+[ext_resource path="res://src/styles/game_theme.tres" type="Theme" id=2]
+
+[node name="input" type="HBoxContainer"]
+margin_left = 20.0
+margin_top = 10.0
+margin_right = 580.0
+margin_bottom = 20.0
+theme = ExtResource( 2 )
+custom_constants/separation = 400
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="label" type="Label" parent="."]
+margin_top = 2.0
+margin_right = 61.0
+margin_bottom = 22.0
+custom_fonts/font = ExtResource( 1 )
+text = "Move up"
+
+[node name="button" type="Button" parent="."]
+margin_left = 461.0
+margin_right = 560.0
+margin_bottom = 25.0
+size_flags_horizontal = 3
+text = "Edit"

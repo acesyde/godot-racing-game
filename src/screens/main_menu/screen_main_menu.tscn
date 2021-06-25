@@ -1,6 +1,8 @@
-[gd_scene load_steps=2 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://src/screens/main_menu/screen_main_menu.gd" type="Script" id=1]
+[ext_resource path="res://src/fonts/NormalFont.tres" type="DynamicFont" id=2]
+[ext_resource path="res://src/fonts/BigFont.tres" type="DynamicFont" id=3]
 
 [node name="screen_main_menu" type="Node"]
 script = ExtResource( 1 )
@@ -18,10 +20,11 @@ __meta__ = {
 [node name="title" type="Label" parent="UI"]
 anchor_left = 0.5
 anchor_right = 0.5
-margin_left = -48.0
-margin_top = 8.0
-margin_right = 44.0
-margin_bottom = 22.0
+margin_left = -72.0
+margin_top = 7.0
+margin_right = 72.0
+margin_bottom = 29.0
+custom_fonts/font = ExtResource( 3 )
 text = "Racing game"
 uppercase = true
 __meta__ = {
@@ -30,12 +33,13 @@ __meta__ = {
 
 [node name="menu" type="Panel" parent="UI"]
 anchor_left = 0.5
+anchor_top = 0.5
 anchor_right = 0.5
-anchor_bottom = 1.0
+anchor_bottom = 0.5
 margin_left = -144.0
-margin_top = 32.0
+margin_top = -265.0
 margin_right = 144.0
-margin_bottom = -38.0
+margin_bottom = 265.0
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -47,6 +51,7 @@ margin_left = -128.0
 margin_top = 24.0
 margin_right = 128.0
 margin_bottom = 72.0
+custom_fonts/font = ExtResource( 2 )
 text = "Play"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -59,6 +64,7 @@ margin_left = -128.0
 margin_top = 88.0
 margin_right = 128.0
 margin_bottom = 136.0
+custom_fonts/font = ExtResource( 2 )
 text = "Controls"
 __meta__ = {
 "_edit_use_anchors_": false
@@ -73,6 +79,8 @@ margin_left = -128.0
 margin_top = -58.0
 margin_right = 128.0
 margin_bottom = -10.0
+custom_fonts/font = ExtResource( 2 )
+custom_colors/font_color = Color( 0.980392, 0.301961, 0.301961, 1 )
 text = "Quit"
 __meta__ = {
 "_edit_use_anchors_": false
