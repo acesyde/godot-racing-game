@@ -16,7 +16,7 @@ var fps: Label
 
 var screens = {
 		"main_menu": preload("res://src/screens/main_menu/screen_main_menu.tscn"),
-#		"game": preload("res://screens/game/screen_game.tscn"),
+		"game": preload("res://src/screens/game/screen_game.tscn"),
 		"controls": preload("res://src/screens/controls/screen_controls.tscn"),
 	}
 
